@@ -4,7 +4,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#contacto, #inicio {
+#contacto,
+#inicio {
     background-image: url(../images/fondo-contacto.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,40 +18,120 @@ body {
 
 }
 
+#bio img {
+    border-radius: 50%;
+}
 
 h1 {
     color: #E20000;
 }
-#stack{
-    background-color: #E20000;
-   
-}
-#stack{
+
+#stack {
     color: white;
+    background-color: #E20000;
 }
-#experiencia{
-    color: #370a6d;;
+
+
+#experiencia {
+    color: #370a6d;
 }
-.tecnologia{
+
+#experiencia i,
+#formacion i {
     color: #6A6A6A;
-    font-size: 60px;
+    font-size: 50px;
 }
-p {
-    color: #6a6a6a;
+
+#experiencia i:hover {
+    color: black
 }
-h3{
+
+#experiencia h2,
+#formacion h2 {
+    font-size: 17px;
+}
+
+#formacion {
+    color: #E20000;
+}
+
+#experiencia h3,
+#formacion h3 {
+    color: #6A6A6A;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#experiencia h4,
+#formacion h4 {
+    font-size: 17px;
+}
+
+#experiencia h5,
+#formacion h5 {
+    color: #6A6A6A;
     font-size: 14px;
 }
 
-.cuadrado{
+#idiomas {
+    background-color: #eee;
+
+}
+
+p {
+    font-size: 16px;
+    color: #6a6a6a;
+}
+
+#idiomas h2 {
+    font-size: 16px;
+}
+
+#idiomas h3 {
+    font-size: 14px;
+}
+
+.c-ih {
+    background-color: white;
+    padding-top: 45px;
+    padding-left: 40px;
+    color: #282828;
+    margin-top: 10px;
+    border-top-right-radius: 20px;
+}
+
+#idiomas .fas {
+    color: white;
+    font-size: 80px;
+    background-color: 370A6D;
+}
+
+#idiomas .card {
+    background-color: #370A6D;
+    border-radius: 15px;
+    padding: 40px 38px 65px 38px;
+}
+
+.tecnologia {
+    color: #6A6A6A;
+    font-size: 60px;
     background-color: white;
     text-align: center;
     border-radius: 5px;
-    width: 13%;
-    height: 13%;
     border: 1px solid white;
     display: block;
 }
+
+p {
+    color: #6a6a6a;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+
+
 .btn {
     color: #370a6d;
     background-color: white;
@@ -98,17 +179,19 @@ main {
     border-top-right-radius: 10px;
 }
 
-#contacto footer, #inicio footer {
-    color: white;
- 
 
-}
-
-#contacto footer a, #inicio footer a {
+#contacto footer,
+#inicio footer {
     color: white;
 }
 
-#contacto footer .fa-linkedin-in, #inicio footer .fa-linkedin-in {
+#contacto footer a,
+#inicio footer a {
+    color: white;
+}
+
+#contacto footer .fa-linkedin-in,
+#inicio footer .fa-linkedin-in {
     color: #ff4a49;
     font-size: 20px;
     background-color: white;
@@ -120,19 +203,22 @@ main {
     margin: 0px 8px;
     padding: 8px 0 0 0;
 }
-#contacto footer .fa-github, #inicio footer .fa-github{
+
+#contacto footer .fa-github,
+#inicio footer .fa-github {
     color: white;
     font-size: 30px;
-   
-  
 }
+
 #proyectos footer {
     color: #ff4a49;
 }
+
 #proyectos footer a {
     color: #ff4a49;
-    
+
 }
+
 #proyectos footer .fa-linkedin-in {
     color: white;
     font-size: 20px;
@@ -145,20 +231,24 @@ main {
     margin: 0px 8px;
     padding: 8px 0 0 0;
 }
+
 #proyectos footer .fa-github {
     font-size: 30px;
     color: #ff4a49;
 }
+
 .active {
     border-radius: 18px;
     border: 1px red solid;
     padding: 5px 10px;
 }
+
 .btn-cv a {
     color: white;
     font-size: 18px;
     text-decoration: none;
 }
+
 .btn-cv {
     background-color: #E20000;
     border-radius: 20px;
@@ -172,8 +262,6 @@ main {
 form textarea {
     height: 130px;
 }
-
-
 
 .proyecto {
     background-color: white;
@@ -196,16 +284,19 @@ form textarea {
     height: 130px;
 }
 
-#inicio img{
+#inicio img {
     height: 400px;
 }
-#inicio img:hover{
+
+#inicio img:hover {
     height: 410px;
 }
-.cohete{
+
+.cohete {
     height: 420px;
 }
-#inicio p{
+
+#inicio p {
     color: white;
     border: 1px white solid;
     border-radius: 15px;
@@ -213,15 +304,18 @@ form textarea {
     font-weight: 600;
 }
 
-.foto-perfil{
-    border-radius: 800px;
-    width: 70%;
-    height: 70%;
+.img-fluid {
+
+    max-width: 100%;
+    height: auto;
 }
+
 /*para movile*/
 
 @media (max-width: 750px) {
-    #contacto, #inicio {
+
+    #contacto,
+    #inicio {
         background-image: url(../images/fondo-proyectos.png);
         background-size: contain;
         background-repeat: no-repeat;
@@ -232,6 +326,7 @@ form textarea {
         background-repeat: no-repeat;
     }
 }
+
 @media (max-width: 750px) {
     #inicio {
         background-image: url(../images/cohete.svg);
@@ -239,15 +334,17 @@ form textarea {
         background-repeat: no-repeat;
     }
 
-    #inicio p{
-        color:#E20000;
+    #inicio p {
+        color: #E20000;
         font-size: 16px;
         border: 1px #E20000 solid;
     }
 }
 
-
+.lorem {}
 
 .pro {
     min-height: 800px;
 }
+
+/*hola*/
