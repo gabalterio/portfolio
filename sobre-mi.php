@@ -1,3 +1,7 @@
+<?php
+$pg = "sobre-mi";
+?>
+
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -15,32 +19,7 @@
 
 <body id="sobre mi" class="d-flex flex-column h-100">
     <header class="container">
-        <nav class="navbar navbar-expand-md mb-4">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active px-3" href="sobre-mi.html">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="btn-cv p-1 px-2">
-                    <a href="btn-cv"> Descargar mi CV<i class="fa-solid fa-download"></i></a>
-                </div>
-        </nav>
+    <?php include_once ("menu.php"); ?> 
     </header>
     <main>
         <section id="bio" class="container">
@@ -50,7 +29,7 @@
                     <p class="col-sm-12 col-12">Apasionada por la tecnología y gestión de proyectos. Conocimientos en Full Stack y de Base de
                         datos.</p>
                         <div class="my-5">
-                        <a href="contacto.html" class="btn-rojo d-none d-sm-block w-25 "> Enviar mensaje</a>
+                        <a href="contacto.php" class="btn-rojo d-none d-sm-block w-25 "> Enviar mensaje</a>
                     </div>
                 </div>
                 <div class="col-12 col-sm-5 mx-auto text-center d-none d-sm-block">
@@ -62,7 +41,7 @@
                 <img src="images/mi-cara.png.jpg" alt="Gabriela" class="img-fluid">
             </div>
             <div class="col-sm-6 d-sm-block d-sm-none">
-                <a href="contacto.html" class="btn-rojo"> Enviar mensaje</a>
+                <a href="contacto.php" class="btn-rojo"> Enviar mensaje</a>
           
         </div>
         </section>
